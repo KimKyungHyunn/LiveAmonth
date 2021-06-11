@@ -228,7 +228,7 @@ public class SignController extends SuperController {
         }
     }
     @RequestMapping("/resultMentNaverSignUp")
-    private String resultMentNaverSignUp(@ModelAttribute UserVO userVO, HttpServletRequest request, HttpSession session) throws Exception {
+    private String resultMentNaverSignUp(@ModelAttribute UserVO userVO, HttpServletRequest request, HttpSession session, Model model) throws Exception {
         //email을 갖고 있는 경우와 아닌 경우
         if(!userVO.getUserEmail().contains("@")){
             String userEmail = request.getParameter(USER_EMAIL.getText());
@@ -236,13 +236,13 @@ public class SignController extends SuperController {
             userVO.setUserEmail(userEmail + AT.getText() + email);
         }
         signService.updateNaverUser(userVO);
-        request.setAttribute(MESSAGE.getText(), SUCCESS_SIGN_UP_MESSAGE.getText());
+        model.addAttribute(MESSAGE.getText(), SUCCESS_SIGN_UP_MESSAGE.getText());
 
         session.setAttribute(USER_VO.getText(),userVO);
         return RESULT_NEW_NAVER_MEMBER.getPath();
     }
     @RequestMapping("/newNaverMember")
-    private String newNaverMember(HttpSession session, HttpServletRequest request) throws Exception {
+    private String newNaverMember(HttpSession session, HttpServletRequest request, Model model) throws Exception {
         UserVO newNaverUser = (UserVO)session.getAttribute(NAVER_USER.getText());
         boolean flag = true;
 
@@ -255,12 +255,12 @@ public class SignController extends SuperController {
             //필수항목 다 동의 한 경우
             if(flag){
                 //session.setAttribute(USER_VO.getText(),newNaverUser);
-                request.setAttribute(MESSAGE.getText(), SUCCESS_SIGN_UP_MESSAGE.getText());
+                model.addAttribute(MESSAGE.getText(), SUCCESS_SIGN_UP_MESSAGE.getText());
             }else{ //필수 항목 하나라도 동의 안한 경우
                 return REDIRECT_NAVER_SIGN_UP.getRedirectPath();
             }
         }else{
-            request.setAttribute(MESSAGE.getText(), FAIL_SIGN_UP_MESSAGE.getText());
+            model.addAttribute(MESSAGE.getText(), FAIL_SIGN_UP_MESSAGE.getText());
         }
 
         return RESULT_NEW_NAVER_MEMBER.getPath();

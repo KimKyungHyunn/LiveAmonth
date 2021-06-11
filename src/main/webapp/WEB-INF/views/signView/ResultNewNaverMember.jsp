@@ -12,7 +12,7 @@
             <div class="col-lg-12">
                 <div class="cf-content">
                     <div class="cc-title">
-                        <h1>${Message}</h1>
+                        <h1>${message}</h1>
                     </div>
                 </div>
             </div>
