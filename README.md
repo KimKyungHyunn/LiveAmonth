@@ -88,5 +88,7 @@
 ![image](https://user-images.githubusercontent.com/62202364/179442960-23cff180-bae9-422b-8484-449d5db738b7.png)
 <br>
 
+## 프로젝트 이슈 추적
 
+[프로젝트 이슈 관리 산출물.pdf](https://github.com/KimKyungHyunn/LiveAmonth/files/9129404/1-3.ALM.pdf)
 
