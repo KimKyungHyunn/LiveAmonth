@@ -23,6 +23,10 @@
 
 <br>
 
+## 프로젝트 이슈 추적
+
+[프로젝트 이슈 관리 산출물.pdf](https://github.com/KimKyungHyunn/LiveAmonth/files/9129404/1-3.ALM.pdf)
+
 ## 개발 환경
 ![image](https://user-images.githubusercontent.com/62202364/179441978-3eea6f5b-c8bb-464e-82c6-ebf93b778999.png)
 <br>
@@ -88,7 +92,20 @@
 ![image](https://user-images.githubusercontent.com/62202364/179442960-23cff180-bae9-422b-8484-449d5db738b7.png)
 <br>
 
-## 프로젝트 이슈 추적
+## 시연 화면 캡쳐
+![image](https://user-images.githubusercontent.com/62202364/179452828-07b58e75-f12a-43a6-a766-28442daacd3a.png)
+<br>
 
-[프로젝트 이슈 관리 산출물.pdf](https://github.com/KimKyungHyunn/LiveAmonth/files/9129404/1-3.ALM.pdf)
+![image](https://user-images.githubusercontent.com/62202364/179452847-0dfebc9f-2caa-4703-9b46-3d79a9d63d6b.png)
+<br>
+
+![image](https://user-images.githubusercontent.com/62202364/179452877-7b0a53ba-bc8e-446f-8c24-de0e137bcac7.png)
+
+![image](https://user-images.githubusercontent.com/62202364/179452932-c7f84ccb-3d04-4b98-bd16-799c1b11b57b.png)
+
+<br>
+
+
+
+
 
